@@ -188,9 +188,9 @@ function getFacing(pos)
   -- find the longer axis
   if (math.abs(pos[1]) > math.abs(pos[3])) then
     if (pos[1] > 0) then 
-      targetDir=sides.west
-    else
       targetDir=sides.east
+    else
+      targetDir=sides.west
     end
   else
     if (pos[3] > 0) then 
