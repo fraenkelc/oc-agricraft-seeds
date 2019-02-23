@@ -173,7 +173,7 @@ function equipCrops(force)
 end
 
 function navPoint(label, range)
-  range = range or 20
+  range = range or 30
   local points = c_nav.findWaypoints(range)
   for i, v in ipairs(points) do
     if (label == v.label) then
