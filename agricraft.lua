@@ -91,9 +91,9 @@ function forAllBlocks(target, func)
   local facing = c_nav.getFacing()
   if (width < 0) then
     width = math.abs(width)
-    turnDirClockwise = facing == sides.posx or facing == sides.posz
+    turnDirClockwise = facing == sides.negx or facing == sides.posz
   else
-    turnDirClockwise = facing == sides.negx or facing == sides.negz
+    turnDirClockwise = facing == sides.posx or facing == sides.negz
   end
   
   
